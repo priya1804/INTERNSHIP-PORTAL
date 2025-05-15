@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is IP?",
+    "answer": "IP is an Internship Portal application designed for students and job seekers to explore, apply, and manage internship opportunities. It also allows companies to post internships and manage applications efficiently, offering a seamless experience for both employers and applicants."
+  },
+  {
+    "question": "How do I post an internship?",
+    "answer": "If you're a company or employer, log in to your account and go to the 'Post Internship' section. Fill in the required internship details such as title, description, duration, stipend, and eligibility. Submit the form to list the opportunity."
+  },
+  {
+    "question": "How can I search for internships?",
+    "answer": "Interns can search for internships using keywords, location, industry, duration, and stipend filters. Use the search bar on the homepage or navigate to the 'Search Internships' page."
+  },
+  {
+    "question": "How do I apply for an internship?",
+    "answer": "Click on the internship you're interested in. On the internship details page, click the 'Apply Now' button. Fill in any additional information and upload your resume if required."
+  },
+  {
+    "question": "Can I save internships to apply later?",
+    "answer": "Yes, you can save internship listings by clicking the 'Save Internship' button. View and manage your saved internships anytime from your profile under the 'Saved Internships' section."
+  },
+  {
+    "question": "How do I track my internship applications?",
+    "answer": "Go to your profile and click on the 'My Applications' tab. You will see all the internships you have applied to along with their current status (e.g., under review, accepted, rejected)."
+  }
+]
