@@ -24,6 +24,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 import { z } from "zod";
 
+
 const schema = z.object({
   title: z.string().min(1, { message: "Title is required" }),
   description: z.string().min(1, { message: "Description is required" }),
@@ -89,16 +90,16 @@ const PostJob = () => {
   return (
     <div>
       <h1 className="gradient-title font-extrabold text-5xl sm:text-7xl text-center pb-8">
-        Post a Job
+        Post a Internship
       </h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-4 p-4 pb-0"
       >
-        <Input placeholder="Job Title" {...register("title")} />
+        <Input placeholder="Internship Title" {...register("title")} />
         {errors.title && <p className="text-red-500">{errors.title.message}</p>}
 
-        <Textarea placeholder="Job Description" {...register("description")} />
+        <Textarea placeholder="Internship Description" {...register("description")} />
         {errors.description && (
           <p className="text-red-500">{errors.description.message}</p>
         )}
@@ -110,7 +111,7 @@ const PostJob = () => {
             render={({ field }) => (
               <Select value={field.value} onValueChange={field.onChange}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Job Location" />
+                  <SelectValue placeholder="Internship Location" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>

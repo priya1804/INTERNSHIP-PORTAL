@@ -75,7 +75,7 @@ const JobListing = () => {
   return (
     <div className="">
       <h1 className="gradient-title font-extrabold text-6xl sm:text-7xl text-center pb-8">
-        Latest Jobs
+        Latest Internships
       </h1>
       <form
         onSubmit={handleSearch}
@@ -83,7 +83,7 @@ const JobListing = () => {
       >
         <Input
           type="text"
-          placeholder="Search Jobs by Title.."
+          placeholder="Search Internship by Title.."
           name="search-query"
           className="h-full flex-1  px-4 text-md"
         />

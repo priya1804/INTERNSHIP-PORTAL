@@ -24,12 +24,14 @@ const schema = z.object({
     .any()
     .refine(
       (file) =>
-        file[0] &&
+        file &&
+        file.length > 0 &&
         (file[0].type === "image/png" || file[0].type === "image/jpeg"),
       {
         message: "Only Images are allowed",
       }
     ),
+
 });
 
 const AddCompanyDrawer = ({ fetchCompanies }) => {
@@ -63,11 +65,12 @@ const AddCompanyDrawer = ({ fetchCompanies }) => {
 
   return (
     <Drawer>
-      <DrawerTrigger>
+      <DrawerTrigger asChild>
         <Button type="button" size="sm" variant="secondary">
           Add Company
         </Button>
       </DrawerTrigger>
+
       <DrawerContent>
         <DrawerHeader>
           <DrawerTitle>Add a New Company</DrawerTitle>

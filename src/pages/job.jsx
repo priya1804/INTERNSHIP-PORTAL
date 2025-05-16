@@ -97,7 +97,7 @@ const JobPage = () => {
         </Select>
       )}
 
-      <h2 className="text-2xl sm:text-3xl font-bold">About the job</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold">About the internship</h2>
       <p className="sm:text-lg">{job?.description}</p>
 
       <h2 className="text-2xl sm:text-3xl font-bold">

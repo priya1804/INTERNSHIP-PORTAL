@@ -69,7 +69,7 @@ const LandingPage = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
           <CardHeader>
-            <CardTitle className="font-bold">For Job Seekers</CardTitle>
+            <CardTitle className="font-bold">For Interns</CardTitle>
           </CardHeader>
           <CardContent>
             Search and apply for Internship, track applications, and more.
@@ -77,7 +77,7 @@ const LandingPage = () => {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="font-bold">For Employers</CardTitle>
+            <CardTitle className="font-bold">For Recruiters</CardTitle>
           </CardHeader>
           <CardContent>
             Post Internship, manage applications, and find the best interns.

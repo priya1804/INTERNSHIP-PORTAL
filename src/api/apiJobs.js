@@ -30,11 +30,13 @@ export async function getJobs(token, { location, company_id, searchQuery }) {
 }
 
 // Read Saved Jobs
-export async function getSavedJobs(token) {
+export async function getSavedJobs(token, { user_id }) {
   const supabase = await supabaseClient(token);
+
   const { data, error } = await supabase
     .from("saved_jobs")
-    .select("*, job: jobs(*, company: companies(name,logo_url))");
+    .select("*, job: jobs(*, company: companies(name,logo_url))")
+    .eq("user_id", user_id);
 
   if (error) {
     console.error("Error fetching Saved Jobs:", error);
@@ -43,6 +45,7 @@ export async function getSavedJobs(token) {
 
   return data;
 }
+
 
 // Read single job
 export async function getSingleJob(token, { job_id }) {
